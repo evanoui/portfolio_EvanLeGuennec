@@ -1,0 +1,235 @@
+:root {--font-josefin:'josefin sans';
+    --font-comfortaa:'comfortaa'
+}
+
+p {font-family: var(--font-comfortaa);}
+
+
+
+  
+
+body {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 0.1fr 1fr 1fr 1fr 1fr;
+padding: 20px;
+font-family: var(--font-comfortaa);
+}
+
+
+.part_title {display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+
+.part_title h2 {font-family: 'comfortaa';
+color: #6A6A6A;
+margin: 5px;}
+
+
+.part_title h1 {font-family:'josefin sans';
+    margin: 5px;
+}
+
+
+
+
+
+/* style pour le header*/
+
+header {
+grid-column-start: 1;
+grid-column-start: 1;
+grid-row-start: 1;
+grid-row-end: 2;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+font-family: 'Comfortaa';
+font-size: 0.75rem;
+}
+
+
+
+/* style pour la 1er partie*/
+
+.contain_part1 {
+    grid-column-start: 1;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    grid-row-end: 3;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.box1  h1{font-family: 'Comfortaa';
+font-size: 3rem;}
+
+.box1  h2{font-family: 'Josefin Sans';
+    color: #6A6A6A;
+    font-size: 2rem;}
+
+
+.box1  h3{font-family: 'Comfortaa';
+color:#6A6A6A ;
+font-size: 1.5rem;}
+
+
+article{display: flex;
+flex-direction: column;
+justify-content: space-evenly}
+
+.box2 {display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+font-family: 'comfortaa';
+}
+
+#button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    width: 215px;
+    margin: 10px;
+border-radius: 50px;
+border-color: black;
+border-width: 5px;
+border-style:solid;}
+
+.two {
+background-color: black;
+color: white;}
+
+.two:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);}
+
+#button:hover{transform: scale(1.1);
+transition-duration: 100ms;
+}
+/* style pour la 2ème partie*/
+
+.contain_part2 {
+    grid-column-start: 1;
+    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-row-end: 4;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+}
+
+
+
+.contain_part2 .box_part2 {
+    display: flex;
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 550px;
+    width: 400px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 50px;
+
+}
+
+.box_part2 .card img
+{width: 100px;
+margin: 10px;}
+
+.card_title {
+    margin-top: auto;
+    border-top: black solid 3px;
+    margin-bottom: 5px;
+    padding: 10px;
+    font-family:var(--font-josefin);
+  }
+
+.card .date {font-family: var(--font-comfortaa);
+font-size: 1.5rem;}
+
+#card2 article {display: flex;
+    justify-content: space-between;
+}
+
+.contenue p {text-align: left;}
+
+.card2 h1 {font-size: 1rem; margin-bottom: 2px;}
+.card2 h3 {font-size: 0.9rem; margin-bottom: 2px;}
+.card2 h4 {font-size: 0.8rem; margin-bottom: 2px;}
+
+.card3 {text-align: center;
+flex-wrap: wrap;
+}
+
+/* style pour la 3ème partie*/
+
+.contain_part3{display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+grid-column-start: 1;
+grid-column-start: 1;
+grid-row-start: 4;
+grid-row-end: 5;
+gap:40px}
+
+.carouselle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+  }
+
+  .carouselle img {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px; /* Ajustez la largeur des images selon vos besoins */
+    height: auto; /* Ajustez la hauteur en conséquence pour maintenir les proportions */
+    animation: scroll 5s linear infinite; /* Ajustez la durée de l'animation selon vos besoins */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% * 5)); /* 5 est le nombre d'images, ajustez-le en conséquence */
+    }
+  }
+
+  
+/* style pour la 4ème partie*/
+
+.contain_part4{
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.9fr 0.1fr;
+}
+
